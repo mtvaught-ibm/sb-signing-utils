@@ -1,0 +1,8 @@
+before_install:
+  - sudo sudo apt-get update
+  - sudo apt-get install -y libjson-c-dev
+  - sudo apt-get install -y libcurl4-openssl-dev
+
+language: C
+
+script: ./build_all.sh
